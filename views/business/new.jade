@@ -1,0 +1,6 @@
+h2 New Business
+p
+  a(href='/business', class='button')
+    &larr; List of all Businesses
+form(method='post', action='/business')
+  !=partial('business/fields', { locals: { business: business } })

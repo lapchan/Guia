@@ -1,0 +1,18 @@
+fieldset#business-fields	
+	div.text-box
+		label Title:
+		input.input-box(name='business[name]', value=business.name || '')
+	div.text-box
+		label address:
+		input(name='business[address]', value=business.address || '')
+	div.text-box
+		label city:
+		input(name='business[city]', value=business.city || '')
+	div.text-box
+		label state:
+		input(name='business[state]', value=business.state || '')
+	div.text-box
+		label zip:
+		input(name='business[zip]', value=business.zip || '')
+	div.text-box
+		input(type='submit', value='Save')

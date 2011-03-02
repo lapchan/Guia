@@ -1,0 +1,12 @@
+h1 Guia Businesses
+
+p
+  a(class='button', href='/business/new') + Create New Business
+
+ul
+  - for (var b in businesses)
+    li
+      a(class='button', href='/business/' + businesses[b].id + '/edit') Edit
+      a(class='button destroy', href='/business/' + businesses[b].id) Delete
+      a(href='/business/' + businesses[b].id)
+        =businesses[b].name
